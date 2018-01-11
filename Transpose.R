@@ -1,7 +1,7 @@
 dir.create("~/Data/StockTwits Data/date/")
 path<-"~/Data/StockTwits Data/date/"
 
-folders<-list.dirs("~/Data/StockTwits Data/",recursive = F)[10:12]
+folders<-list.dirs("~/Data/StockTwits Data/",recursive = F)[2:10]
 for (fold in folders)
 {
   dates<-read.table(paste0(fold,"/AAPL.txt"),skip=5,header=T,sep="\t")
