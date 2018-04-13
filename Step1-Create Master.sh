@@ -1,0 +1,1 @@
+ls *.txt | xargs -n 1 tail -n+7 > master.txt
